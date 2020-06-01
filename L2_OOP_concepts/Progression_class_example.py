@@ -48,9 +48,9 @@ class ArithmeticProgression(Progression): # inherit from Progression
         super().__init__(start)              # initialize base class
         self._increment = increment
 
-    def advance(self):            # override inherited version
+    def _advance(self):            # override inherited version
         """Update current value by adding the fixed increment."""
-        self.current += self.increment
+        self._current += self._increment
 
 
 class GeometricProgression(Progression): # inherit from Progression
@@ -79,7 +79,7 @@ class FibonacciProgression(Progression):
        super().__init__(first)              # start progression at first
        self._prev = second - first          # fictitious value preceding the first
 
-   def advance(self):
+   def _advance(self):
        """Update current value by taking sum of previous two"""
        self._prev,self._current = self._current,self._prev + self._current
 
