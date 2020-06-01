@@ -2,6 +2,7 @@
 
 class Progression :
     """Iterator producing a generic progression.
+
     Default iterator produces the whole numbers 0, 1, 2, ...
     """
 
@@ -21,7 +22,7 @@ class Progression :
 
     def __next__(self):
         """Return the next element, or else raise StopIteration error"""
-        if self._current  is None :        # our convention to end a progression
+        if self._current is None :        # our convention to end a progression
             raise StopIteration()
         else:
             answer =self._current           # record current value to return
@@ -45,7 +46,7 @@ class ArithmeticProgression(Progression): # inherit from Progression
         increment   the fixed constant to add to each term (default 1)
         start       the first term of the progression (default 0)
          """
-        super().__init__(start)              # initialize base class
+        super().__init__(start)              # initialize baqse class
         self._increment = increment
 
     def _advance(self):            # override inherited version
@@ -67,6 +68,7 @@ class GeometricProgression(Progression): # inherit from Progression
     def _advance(self):             # override inherited version
         """Update current value by multiplying it by the base value."""
         self._current *= self._base
+
 
 class FibonacciProgression(Progression):
    """Iterator producing a generalized Fibonacci progression"""
