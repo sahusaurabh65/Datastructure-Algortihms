@@ -2,6 +2,7 @@
 ------------------------------------------------------------------------------------------------
 Day 1
 OOP concepts :
+
 	- Vector class
 		Defining a simple vector class .
 	
