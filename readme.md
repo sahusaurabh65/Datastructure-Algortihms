@@ -3,7 +3,7 @@
 Day 1
 OOP concepts :
 	- Vector class
-		Playing with vector class new fuction and defining muttiple new functions.
+		Defining a simple vector class .
 	
 	- Inheritance 
 		"Progression using inheritance (example) "
