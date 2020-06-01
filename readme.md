@@ -8,7 +8,7 @@ OOP concepts :
 	- Inheritance 
 		"Progression using inheritance (example) "
 		{ parent class  : Progression,
-		  child classes : ArithmeticProgression,GeometriProgression
+		  child classes : ArithmeticProgression,GeometricProgression,FibonacciProgression
 		}
 	- Abstract Class
 	
