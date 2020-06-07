@@ -15,10 +15,8 @@
 12  Variable lookup
 """
 
-
 import timeit
 from numpy import random
-
 """ Task 1: count element in a list """
 class Py_Optmize_example:
     def __init__(self,Million_numbers):
