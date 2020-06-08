@@ -11,26 +11,29 @@
 8   Checking for true 
 9   Checking for false
 10  Checking for Empty list
-11  Def vs Lambada 
+11  Def vs Lambda 
 12  Variable lookup
 """
 
+
 import timeit
 from numpy import random
-""" Task 1: count element in a list """
+
+
 class Py_Optmize_example:
     def __init__(self,Million_numbers):
         Million_numbers = [random() for _ in range(1000000)]
         self.Million_numbers = Million_numbers
 
+    """ Task 1: count element in a list """
     def count_elements (self):
         how_many  = 0
         for element in self.Million_numbers:
             how_many +=1
-        print(how_many)                     # slower
+        print(how_many)                 # slower
 
         """approx 68 builtin function try to use it e.g 'len' """
-        print (len(Million_numbers))   # useful to use builtin function for optimization
+        print (len(self.Million_numbers))   # useful to use builtin function for optimization
 
 
     """ Task 2: Filter the list """
@@ -39,7 +42,7 @@ class Py_Optmize_example:
         # approach 2.1
         for element  in self.Million_numbers :
             if element % 2:
-                output.appent(element)  # slower
+                output.append(element)  # slower
 
         #approach 2.2:
         filt_slow = list (filter (lambda x:x %2,self.Million_numbers))     # slower
@@ -197,7 +200,7 @@ class Py_Optmize_example:
 
 
     """ Task11 : Def vs Lambada """
-    def def_vs_lambada(name):
+    def def_vs_lambda(name):
         """Result: Both below approach will take work equally same amount of time """
         #approach 1
         def greet(name):
